@@ -1,0 +1,512 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+JP:wght@500&family=Noto+Sans:wght@500&family=Preahvihear&display=swap');
+
+
+*{
+    margin-top: 0px;
+}
+.body-bg{
+    background: rgba(94, 153, 102, 0.918);
+}
+.logo-img{
+    font-size: 1vw;
+    width: 65px;
+    height: 65px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    transition: 300ms;
+}
+.logo-img:hover{
+    transform: scale(1.1);
+}
+.text-preview{
+    margin-top: 30px;
+    margin-bottom: -25px;
+    text-align: center;
+    font-size: 2.5vw;
+    font-family: 'Preahvihear', sans-serif;
+}
+.img-preview{
+    margin-left: 25px;
+    margin-bottom: 15px;
+    width: 45px;
+    height: 45px;
+}
+.eng-name{
+    margin-left: 34vw;
+    font-size: 40px;
+    text-transform: uppercase;
+    color:#ffffff;
+    text-decoration: unset;
+    font-family: 'Noto Sans', sans-serif;
+}
+.jp-name{
+    font-size: 40px;
+    text-transform: uppercase;
+    color:#ffffff;
+    text-decoration: unset;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.slide{
+    margin: 20px auto;
+    margin-top: 2.89vw;
+    width: 50vw;
+    height: 30vw;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 300ms;
+    margin-bottom: 14vw;
+}
+.slide:hover{
+    transform: scale(1.025);
+}
+.text-header{
+    margin-top: -4vw;
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Preahvihear', sans-serif;
+}
+.img-header{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 55px;
+    height: 55px;
+}
+.product{
+    margin: 2.5vw 2.5vw;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+@media screen and (max-width: 1920px) {
+    .eng-name{
+        margin-left: 29vw;
+    }
+    .product-card{
+        padding: 2px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .product{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.5vw 2.5vw;
+    grid-gap: 50px;
+    }
+    .eng-name{
+        margin-left: 23vw;
+        font-size: 35px;
+    }
+    .jp-name{
+        font-size: 35px;
+    }
+    .clear{
+        font-size: 0.85vw;
+        margin-right: 5px;
+    }
+    .product-card{
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .product{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    }
+    .product-card{
+        padding: 100px;
+        margin: 0 185px;
+    }
+    .text-list{
+    margin-right: 0px;
+    background-color: #662805;
+    }
+    .eng-name{
+        font-size: 25px;
+    }
+    .jp-name{
+        font-size: 25px;
+    }
+    .modal-text{
+        font-size: 0.5vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .eng-name{
+        font-size: 5vw;
+        margin-left: 50px; 
+    }
+    .text-header{
+        font-size: 3.90vw;
+    }
+    .text-preview{
+        margin-left: 30px;
+        margin-bottom: 20px;
+        font-size: 3.90vw;
+    }
+    .product{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin: 0 auto;
+    }
+    .product-card{
+        padding: 900px;
+        margin: 0 150px;
+    }
+    .text-product{
+        font-size: 10vw;
+    }
+    .ikura-text{
+        margin-left: 0px;
+    }
+    .modal-text{
+        padding: 10px;
+        font-size: 50vw;
+    }
+}
+.product-card{
+    background-color: rgba(230, 230, 230, 0.9);
+    border-radius: 15%;
+    padding: 6px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.product-card:hover{
+    transform: scale(1.07);
+    background-color: 	rgba(205, 224, 231, 1);
+}
+.product-img {
+    width: 100%;
+    height: 15vw;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 48px;
+}
+.text-product{
+    text-align: left;
+}
+.add-itembt{
+    /* display: none; */                         /* display: none; */ 
+    margin-right: 20px;
+    margin-top: -10px;
+    text-align: right;
+    font-family: 'Preahvihear', sans-serif;          /* add-itembt */
+    font-size: 2vw;
+    color: rgb(114, 114, 114);
+}
+.adddelbt{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.bt-left{
+    display: none;            /* display: none; */ 
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;            /* bt-left */
+    color: aliceblue;
+    background:  #662805;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bt-right{
+    display: none;                   /* display: none; */ 
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;          /* bt-right */
+    color: aliceblue;
+    background: #064B6A;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.delbt{
+    margin-top: 8px;
+    font-size: 1.5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+   
+}
+.addbt{
+    margin-top:8px ;
+    font-size: 1.5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.boxprice{
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    padding: 15px;
+}
+.price-zone{
+    padding: 10px;
+    background: #064B6A;
+    margin-left: 3.5vw;
+    justify-content: center;
+    border-radius: 25px;
+    
+}
+.price-eng{
+    margin-top: 7px;
+    font-size: 1.5vw;
+    font-family: 'Preahvihear', sans-serif;
+    text-align: center;
+    color:aliceblue
+}
+.price-jp{
+    font-size: 1.5vw;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    color:aliceblue
+}
+.ikura{
+
+    justify-content: center;
+    margin-right: 30%;
+    border-radius: 25px;
+}
+.ikura-text{
+    font-family: 'Preahvihear', sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1vw;
+    margin-right: 0px;
+}
+.modal-zone{
+    margin-right: 3.5vw;
+    justify-content: center;
+    text-align: center;
+}
+.modalbt{
+    margin: 25px auto;
+    text-align: center;
+    border-radius: 15px;
+    background: wheat;
+    cursor: pointer;
+    transition: 300ms;
+}
+.modal-text{
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 1.5vw;
+    border: none;
+}
+.modalbt:hover{
+    transform: scale(1.07);
+    color: white;
+    background-color:#7b5524;
+}
+.modals{
+    display: none;  
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.modal_content{
+    animation-name: modalopen;
+    animation-duration: 1s;
+    background: white;
+    margin: 20% auto;
+    padding: 20px;
+    width: 40vw;
+    border-radius: 25px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.17)
+}
+.closebtn{
+    color: rgb(165, 165, 165);
+    margin-left: 95%;
+    font-size: 35px;
+}
+.closebtn:hover,.closebtn:focus{
+    color: black; 
+    cursor: pointer;
+}
+@keyframes modalopen {
+    from{opacity: 0}
+    to{opacity: 1}
+}   
+.text-head-modal{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: 'Preahvihear', sans-serif;
+}
+.text-list{
+    background-color: #066a33;
+    margin-left: 3vw;
+    font-size: 1.5vw;
+    font-family: 'Preahvihear', sans-serif;
+    text-decoration: unset;
+    color: white;
+    border-radius: 30px;
+    padding: 7px;
+    transition: 150ms;
+} 
+.clear{
+    background-color: #662805;
+    font-size: 1.4vw;
+    font-family: 'Preahvihear', sans-serif;
+    color: white;
+    border-radius: 30px;
+    padding: 6.5px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 250ms;
+    text-decoration: unset;
+}
+.clear:hover{
+    background-color: #064B6A;
+}
+
+.listproduct{
+    margin-top: 1vw;
+}
+.list-name-price{
+    font-family: 'Preahvihear', sans-serif;
+    background-color:#d6d6d6d5;
+    color: black;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 3vw;
+    margin-right: 70.5vw;
+
+}
+.totalprice{
+    font-family: 'Preahvihear', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    border-radius: 15px;
+    border-color: black;
+    padding: 3.5px;
+    font-size: 1.1vw;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    margin-left: 3vw;
+    margin-right: 77.5vw;
+}
+.footer{
+    text-align: center;
+    color: #ffffff;
+}
+
+/* form zone */
+.form-zone {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-family: 'Preahvihear', sans-serif;
+    text-align: center;
+}
+.form-text{
+    font-family: 'Preahvihear', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #064B6A;
+    border-radius: 4px;
+    resize: vertical; 
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #064B6A;
+    border-radius: 4px;
+}
+.btsub{
+    background-color: #064B6A;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0  #fabd14;
+    transition: ease-out 0.5s;
+    margin-top: 10px;
+    margin-left: 90%;
+    font-size: 1.25rem;
+}
+.btsub:hover {
+    box-shadow: inset 45px 0px 27px 0px #fabd14;
+    border: none;
+    color: black;
+    transform: scale(1.05);
+}
+
+
+/* #064B6A blue   rgba(94, 153, 102, 0.918);  *.
+/*
+.bt-left{
+    background: gold;
+    padding: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.bt-right{
+    display: flex;
+}
+.addbt{
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: #064B6A;
+    color: aliceblue;
+    font-size: 1vw;
+    font-weight: bold;
+    border-radius: 35%;
+    cursor: pointer;
+}
+.delbt{
+    padding: 10px 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color:  #662805;
+    color: aliceblue;
+    font-size: 1vw;
+    font-weight: bold;
+    border-radius: 35%;
+    cursor: pointer;
+}
+*/
+
+
